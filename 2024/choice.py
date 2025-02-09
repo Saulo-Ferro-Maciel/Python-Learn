@@ -20,6 +20,6 @@ while not off:
     for i, grupo in enumerate(lista_de_Grupos, 1):
         print(f"Item {i}: {grupo}")
 
-    resposta = input("\nDeseja sortear novamente? (s/n)\n")
-    if resposta.lower() != 's':
+    resposta = input("\nDeseja sortear novamente? (s/n)\n").lower()
+    if resposta[0] != 's':
         off = True
